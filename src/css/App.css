@@ -33,7 +33,14 @@ button{
   max-width: 1300px;
   margin: 0 auto;
 }
-
+.Stationery,
+.Fashion,
+.Digital,
+.Living,
+.Habit,
+.Happiermart{
+  padding: 100px 0;
+}
 .loginPage{
   width: 400px;
   margin: 5rem auto 0;

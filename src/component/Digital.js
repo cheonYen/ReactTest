@@ -3,13 +3,13 @@ import ListCard from './ListCard.js'
 
 function Digital({data}) {
   let dataList = data.filter(
-    (item) => item.category == "Digital"
+    (item) => item.category == "Digital Acc"
   );
 
   return (
     <main className='main'>
       <section className='inner Digital'>
-        <h2 className='heading'>Digital</h2>
+        <h2 className='heading'>Digital Acc</h2>
         <div className='allList'>
           <ul className='listCon'>
           {dataList.map((item) => {
