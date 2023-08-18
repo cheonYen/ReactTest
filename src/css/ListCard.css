@@ -1,0 +1,51 @@
+.listCard{
+  cursor: pointer;
+}
+
+.listCard .imgCon{
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.listCard .imgCon img,
+.listCard .imgCon::before,
+.listCard .imgCon span{
+  transition: .3s;
+}
+.listCard .imgCon img{}
+.listCard .imgCon::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: var(--main);
+  z-index: 1;
+}
+.listCard .imgCon span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  opacity: 0;
+  z-index: 2;
+  font-size: var(--h4);
+}
+
+.listCard h5{}
+.listCard p{}
+
+
+@media (hover:hover){
+  .listCard:hover .imgCon img{
+    filter: saturate(0) contrast(1.5);
+  }
+  .listCard:hover .imgCon::before{
+    opacity: 0.7;
+  }
+  .listCard:hover .imgCon span{
+    opacity: 1;
+  }
+}

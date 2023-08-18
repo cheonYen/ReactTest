@@ -1,0 +1,10 @@
+.allList{}
+.allList .listCon{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 1rem;
+}
+.allList .listCon li{
+  width: calc(100% / 5 - 1rem);
+  height: 335px;
+}
